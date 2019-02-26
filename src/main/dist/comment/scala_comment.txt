@@ -1,0 +1,13 @@
+#extension
+scala
+#prior
+'
+'
+#prior
+"
+"
+#start
+//
+#startendnest
+/*
+*/

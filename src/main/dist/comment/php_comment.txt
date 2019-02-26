@@ -1,0 +1,15 @@
+#extension
+php
+#prior
+'
+'
+#prior
+"
+"
+#start
+//
+#startend
+/*
+*/
+#linestart
+#

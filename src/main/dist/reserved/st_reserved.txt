@@ -1,0 +1,6 @@
+true
+false
+nil
+self
+super
+thisContext

@@ -1,0 +1,17 @@
+#extension
+py
+#start
+#
+#startend
+"""
+"""
+#linestart
+from
+#linestart
+import
+#literal
+"
+"
+#literal
+'
+'

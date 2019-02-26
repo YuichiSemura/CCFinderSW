@@ -1,0 +1,11 @@
+#extension
+cls
+#extension
+bas
+#literalverbatim
+"
+"
+#start
+'
+#linecontinue
+_

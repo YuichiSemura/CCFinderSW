@@ -1,0 +1,13 @@
+#extension
+go
+#prior
+'
+'
+#prior
+"
+"
+#start
+//
+#startend
+/*
+*/

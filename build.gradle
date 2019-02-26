@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'CCFinderSW'
+version '0.9'
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+sourceCompatibility = 1.8
+mainClassName = 'ccfindersw.CCFSWLauncher'
+def executableBaseName = "CCFinderSW-0.9"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile fileTree(include: '*.jar', dir: 'lib')
+}
+
+jar {
+    archiveName = "${executableBaseName}.jar"
+    manifest {
+        attributes 'Main-Class' : mainClassName
+    }
+
+    from configurations.compile.collect {it.isDirectory() ? it : zipTree(it)}
+}
