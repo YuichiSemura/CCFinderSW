@@ -39,11 +39,8 @@ public class Pair2Set {
     /**
      * ペアを受け取り，クローンセット情報を付加したクローンペアを返す
      * （クローンIDによってクローンセットであるかを判別する）
-     *
-     * @param pair
-     * @return
      */
-    int[][] makeCloneSet(int[][] pair, boolean isCCFinderX) {
+    int[][] makeCloneSet(int[][] pair) {
         System.out.println("Shaping Clone Pairs...");
 
         // 長さが同じものしかクローンセットにならないためソートをかける

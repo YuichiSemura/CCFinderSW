@@ -135,7 +135,7 @@ public class Lexer {
         try {
             str = FileAndString.readAll(filename);
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         String[] x = str.split("\r\n?|\n");
@@ -171,7 +171,7 @@ public class Lexer {
      * @param language (refer to extensionMapTrueEnd)
      */
     public void tokenizeAFile(String filename, int i, String language) {// 通常使用
-        PreProcess pp = new PreProcess(or, language, fd.directoryName, filename);
+        PreProcess pp = new PreProcess(or, language, filename);
         pp.readFile();
 
         if (language.equals("c") || language.equals("cpp")) {

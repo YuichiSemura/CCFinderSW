@@ -10,7 +10,7 @@ import static common.TokenName.*;
 
 public class CCFXPrepOutput {
 
-	private String directoryName ="";
+    private String directoryName;
 	private ArrayList<Pre> preList;
 	private String language;
 
@@ -22,9 +22,6 @@ public class CCFXPrepOutput {
 
     /**
      * 見たらわかる
-     *
-     * @param str
-     * @return
      */
     private String replaceNewLine(String str) {
         return str.replaceAll("\r", "&r;").replaceAll("\n", "&n;");
@@ -39,7 +36,7 @@ public class CCFXPrepOutput {
         String dirname = directoryName + File.separator + ".ccfxprepdir";
         filename = dirname + filename.substring(directoryName.length()) + "." + language + ".2_0_0_2.default.ccfxprep";
 
-        File newDir = null;
+        File newDir;
         if (!filename.substring(dirname.length() + 1).contains(File.separator)) {
             newDir = new File(dirname);
         } else {
@@ -62,7 +59,7 @@ public class CCFXPrepOutput {
             boolean rare = false;
             for (int i = 0; i < aPreList.token.length(); i++) {
                 char a = aPreList.token.charAt(i);
-                if ((int) a > 255 || (int) a < 0) {
+                if ((int) a > 255) {
                     newStr = newStr.replaceFirst(aPreList.token.substring(i, i + 1), "&#x" + Integer.toHexString(a) + ";");
                     rare = true;
                 }

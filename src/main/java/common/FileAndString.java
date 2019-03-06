@@ -2,6 +2,7 @@ package common;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class FileAndString {
     }
 
     public static void writeAll(final String path, String str) {
-        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"), 1048576)) {
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), StandardCharsets.UTF_8), 1048576)) {
             bw.write(str);
         } catch (IOException e) {
             System.out.println(e);
@@ -30,7 +31,7 @@ public class FileAndString {
     }
 
     public static void writeAllAppend(final String path, String str) {
-        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path, true), "UTF-8"), 1048576)) {
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path, true), StandardCharsets.UTF_8), 1048576)) {
             bw.write(str);
         } catch (IOException e) {
             System.out.println(e);

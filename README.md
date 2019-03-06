@@ -17,7 +17,7 @@ CCFinderSW-version.zipを展開してください．
 ## コマンド設定方法について
 いくつかのドキュメントが存在します．  
 実行について  [Run.md](UsageJp/Run.md)  
-予約語ファイル・コメントファイルについて [Option.md](UsageJp/Option.md)  
+予約語ファイル・コメントファイルについて [OptionFile.md](UsageJp/OptionFile.md)  
 利用できるViewerについて  [OutputAndViewer.md](OutputAndViewer.md)  
 考えられるトラブルについて [TroubleShooting.md](UsageJp/TroubleShooting.md)
 
@@ -50,4 +50,4 @@ http://www.apache.org/licenses/LICENSE-2.0
 ## 利用についての注意点
 CCFSWは字句解析を行いますが，言語ごとに個別の字句解析は持っていません．  
 オプションファイルを使用することで各言語に合わせた字句解析を行います．  
-オプションファイルの記法については, Comment.md，ReservedWord.md を参照してください． 
+オプションファイルの記法については, [OptionFile.md](UsageJp/OptionFile.md) 　を参照してください． 

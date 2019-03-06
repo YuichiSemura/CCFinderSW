@@ -11,7 +11,7 @@ import static common.TokenName.*;
 
 public class CCFXPrepReload {
 
-    private String directoryName = "";
+    private String directoryName;
     private String language;
 
     public ArrayList<Token> tokenList = new ArrayList<>();
@@ -46,7 +46,7 @@ public class CCFXPrepReload {
 
             //center
             int line2 = line;
-            int clm2 = clm;
+            int clm2;
             //int sum2 = sum;
             if (tab[1].charAt(0) == '+') {
                 clm2 = clm + Integer.parseInt(tab[1].substring(1), 16);
@@ -59,9 +59,9 @@ public class CCFXPrepReload {
             }
 
             //right
-            String value = "";
+            String value;
             String three = tab[2];
-            int type = ZERO;
+            int type;
             if (three.length() > 3 && three.substring(0, 3).equals("id|")) {
                 type = IDENTIFIER;
                 value = three.substring(3);

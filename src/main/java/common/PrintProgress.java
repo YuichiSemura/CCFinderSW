@@ -41,9 +41,9 @@ public class PrintProgress {
                 System.out.print(percent + "%");
             }
             if (scale == 1 && percent == 50) {
-                System.out.println("");
+                System.out.println();
             } else if (percent == 100) {
-                System.out.println("");
+                System.out.println();
             }
         }
 
@@ -73,8 +73,6 @@ public class PrintProgress {
 
     public void test(int max) {
         PrintProgress ps = new PrintProgress(2);
-        IntStream.range(0, max).forEach(i -> {
-            ps.plusProgress(max);
-        });
+        IntStream.range(0, max).forEach(i -> ps.plusProgress(max));
     }
 }

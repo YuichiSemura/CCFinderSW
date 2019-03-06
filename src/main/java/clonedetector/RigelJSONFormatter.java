@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 
 public class RigelJSONFormatter {
 
@@ -36,7 +37,7 @@ public class RigelJSONFormatter {
     public void outputRigelJSONFormatter() {
         String filename = this.filename + "_ccfsw.json";
         System.out.println("json file = " + filename);
-        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename), "UTF-8"), 1048576)) {
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename), StandardCharsets.UTF_8), 1048576)) {
             bw.write("{");
 
             int indentCount = 0;
@@ -50,7 +51,7 @@ public class RigelJSONFormatter {
             }
             bw.write("}\n");
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -71,7 +72,7 @@ public class RigelJSONFormatter {
 			}
 		},
 		*/
-        StringBuilder buf = new StringBuilder("");
+        StringBuilder buf = new StringBuilder();
         //environment
         //indent1
         indentAppend(buf, indent, indentCount);
@@ -87,7 +88,7 @@ public class RigelJSONFormatter {
         indentAppend(buf, indent, indentCount);
         buf.append("\"version\":").append("\"").append(CCFSWData.getVersion()).append("\"").append(",");
         indentAppend(buf, indent, indentCount);
-        buf.append("\"parameters\":").append("{").append("");
+        buf.append("\"parameters\":").append("{");
         ++indentCount;
         //indent4
         indentAppend(buf, indent, indentCount);
@@ -140,7 +141,7 @@ public class RigelJSONFormatter {
             ++indentCount;
             //indent3
             indentAppend(buf, indent, indentCount);
-            buf.append("\"id\":").append(String.valueOf(j)).append(",");
+            buf.append("\"id\":").append(j).append(",");
             indentAppend(buf, indent, indentCount);
             buf.append("\"path\":").append("\"").append(fd.fileNameList.get(j).replaceAll("\\\\", "\\\\\\\\")).append("\"");
             --indentCount;
@@ -150,7 +151,6 @@ public class RigelJSONFormatter {
             if (j != fd.filePathList.size() - 1) {
                 buf.append(",");
             }
-            ;
         }
         --indentCount;
         //indent1

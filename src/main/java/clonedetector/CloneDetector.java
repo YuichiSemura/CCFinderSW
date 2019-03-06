@@ -48,24 +48,23 @@ public class CloneDetector {
     private void lexer(OptionReader or, FileData fd, Lexer lx) {
         Time time = new Time();
         if (!or.isNoLexer()) {
-            System.out.println("---Lexer start---" + System.lineSeparator() + "Lexer progress");
+            System.out.println("\n---Lexer start---" + System.lineSeparator() + "Lexer progress");
             //ファイルサーチ
             lx.searchDirectory();
             //全ファイルのレクサー
             lx.doPreProcess();
             //情報の出力
             lx.outputFileList();
-            System.out.println("\nLexer " + time.end() + "\nLOC = " + fd.lineCount + " Token = " + fd.tokenCount + "\n---Lexer end---\n");
+            System.out.println("Lexer " + time.end() + "\nLOC = " + fd.lineCount + " Token = " + fd.tokenCount + "\n---Lexer end---\n");
         } else {
             //noLexer
             System.out.println("noLexer mode");
             lx.loadLexer();
         }
-        lx = null;
     }
 
     public static void cloneDetection(OptionReader or, NGramFinder nfBoss, FileData fd, ClonePairData cpd) {
-        System.out.println("\n---CloneDetection start---");
+        System.out.println("---CloneDetection start---");
         Time time = new Time();
         int group = or.getGroup();
         int[] pairCount = new int[group * group];
@@ -98,7 +97,7 @@ public class CloneDetector {
         //make cloneSet
         if (cpd.pairListTrue.length > 0) {
             Pair2Set ps = new Pair2Set();
-            cpd.pairListTrue = ps.makeCloneSet(cpd.pairListTrue, or.isCcfinderx());
+            cpd.pairListTrue = ps.makeCloneSet(cpd.pairListTrue);
             System.out.println("ClonePairData size=" + cpd.pairListTrue.length);
         }
         System.out.println("---CloneDetection end " + time.end() + "---\n");

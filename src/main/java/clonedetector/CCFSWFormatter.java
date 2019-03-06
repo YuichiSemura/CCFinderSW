@@ -24,9 +24,7 @@ public class CCFSWFormatter {
     private String directoryPath;
     private String language;
     private int threshold;
-    private int detectionRange;
     private String charset;
-    private ArrayList<String> debug = new ArrayList<>();
     private HashMap<String, LangRuleConstructor> languageRuleMap;
     private ClonePairData cpd;
 
@@ -38,7 +36,6 @@ public class CCFSWFormatter {
         this.toolName = or.getToolname();
         this.language = or.getLanguage();
         this.directoryPath = or.getDirectory();
-        this.detectionRange = or.getDetectionRange();
         this.languageRuleMap = or.languageRuleMap;
         this.charset = or.getCharset();
         this.cpd = cpd;
@@ -51,7 +48,7 @@ public class CCFSWFormatter {
     public void outputCCFSWFormatPair() {
         String filename = this.filename + "_ccfsw.txt";
         System.out.println("ccfsw file = " + filename);
-        StringBuilder buf = new StringBuilder("");
+        StringBuilder buf = new StringBuilder();
         optionRuleFile(buf);
 
         // クローンペア部
@@ -68,18 +65,18 @@ public class CCFSWFormatter {
             int lineNum = forward.lineStart + 1;
             int columnNum = forward.columnStart + 1;
 
-            buf.append(String.valueOf(fileNum));
-            buf.append(":").append(String.valueOf(lineNum));
-            buf.append(",").append(String.valueOf(columnNum));
+            buf.append(fileNum);
+            buf.append(":").append(lineNum);
+            buf.append(",").append(columnNum);
             buf.append(" - ");
 
             TokenData backward = nf.tokenList[x[0]];
             lineNum = backward.lineEnd + 1;
             columnNum = backward.columnEnd + 2;// +2
 
-            buf.append(String.valueOf(lineNum));
+            buf.append(lineNum);
             buf.append(",");
-            buf.append(String.valueOf(columnNum));
+            buf.append(columnNum);
             buf.append("\n\t");
 
             //pairの後
@@ -88,18 +85,18 @@ public class CCFSWFormatter {
             lineNum = forward.lineStart + 1;
             columnNum = forward.columnStart + 1;
 
-            buf.append(String.valueOf(fileNum));
-            buf.append(":").append(String.valueOf(lineNum));
-            buf.append(",").append(String.valueOf(columnNum));
+            buf.append(fileNum);
+            buf.append(":").append(lineNum);
+            buf.append(",").append(columnNum);
             buf.append(" - ");
 
             backward = nf.tokenList[x[1]];
             lineNum = backward.lineEnd + 1;
             columnNum = backward.columnEnd + 2;// +2
 
-            buf.append(String.valueOf(lineNum));
+            buf.append(lineNum);
             buf.append(",");
-            buf.append(String.valueOf(columnNum));
+            buf.append(columnNum);
             buf.append("\n");
             ps.plusProgress(cpd.pairListTrue.length);
         }
@@ -113,7 +110,7 @@ public class CCFSWFormatter {
     public void outputCCFSWFormatSet() {
         String filename = this.filename + "_ccfsw.txt";
         System.out.println("ccfsw file = " + filename);
-        StringBuilder buf = new StringBuilder("");
+        StringBuilder buf = new StringBuilder();
         optionRuleFile(buf);
 
         // クローンセット部
@@ -165,18 +162,18 @@ public class CCFSWFormatter {
             int lineNum = forward.lineStart;
             int columnNum = forward.columnStart;
 
-            buf.append("\t").append(String.valueOf(fileNum));
-            buf.append(":").append(String.valueOf(lineNum));
-            buf.append(",").append(String.valueOf(columnNum));
+            buf.append("\t").append(fileNum);
+            buf.append(":").append(lineNum);
+            buf.append(",").append(columnNum);
             buf.append(" - ");
 
             TokenData backward = nf.tokenList[y];
             lineNum = backward.lineEnd;
             columnNum = backward.columnEnd + 1;// +2
 
-            buf.append(String.valueOf(lineNum));
+            buf.append(lineNum);
             buf.append(",");
-            buf.append(String.valueOf(columnNum));
+            buf.append(columnNum);
             buf.append("\n");
         }
     }
@@ -190,7 +187,7 @@ public class CCFSWFormatter {
         buf.append("#option\n-d\t").append(directoryPath).append("\n");
         buf.append("-l\t").append(language).append("\n");
         buf.append("-o\t").append(this.filename).append("\n");
-        buf.append("-t\t").append(String.valueOf(threshold)).append("\n");
+        buf.append("-t\t").append(threshold).append("\n");
         //buf.append("-w\t").append(getRelation(detectionRange)).append("\n");
         buf.append("-charset\t").append(charset).append("\n");
 
@@ -206,9 +203,9 @@ public class CCFSWFormatter {
         // ソースファイル部
         buf.append("#source_files\n");
         for (int i = 0; i < fd.filePathList.size(); i++) {
-            buf.append(String.valueOf(i));
-            buf.append("\t").append(String.valueOf(fd.lineCountList[i]));
-            buf.append("\t").append(String.valueOf(fd.tokenCountList[i]));
+            buf.append(i);
+            buf.append("\t").append(fd.lineCountList[i]);
+            buf.append("\t").append(fd.tokenCountList[i]);
             buf.append("\t").append(fd.fileNameList.get(i));
             buf.append("\n");
         }

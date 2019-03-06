@@ -295,8 +295,8 @@ public class CloneDetectorCLIParser {
             helpFormatter.setOptionComparator(null);
             StringWriter buf = new StringWriter();
             PrintWriter pw = new PrintWriter(buf);
-            helpFormatter.printHelp(pw, helpFormatter.getWidth(), "[D]" + "\n" + BAR, (String) null, opts
-                    , helpFormatter.getLeftPadding(), helpFormatter.getDescPadding(), (String) null, false);
+            helpFormatter.printHelp(pw, helpFormatter.getWidth(), "[D]" + "\n" + BAR, null, opts
+                    , helpFormatter.getLeftPadding(), helpFormatter.getDescPadding(), null, false);
             System.out.print(buf.toString());
             System.out.println(BAR);
             System.exit(1);

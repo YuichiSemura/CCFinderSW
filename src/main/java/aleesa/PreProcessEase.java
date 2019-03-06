@@ -14,9 +14,9 @@ public class PreProcessEase {
     public int nowLine;// 行数
     private int lastNewLine = 0;
     public ArrayList<Token> tokenList = new ArrayList<>();
-    public ArrayList<Pre> preList = new ArrayList<Pre>();
+    public ArrayList<Pre> preList = new ArrayList<>();
     private String variableRegex = "[0-9a-zA-Z_]+";
-    private String reservedRegex = "";
+    private String reservedRegex;
     private Pattern p = null;
 
     public PreProcessEase(String reservedRegex, String strRegex) {

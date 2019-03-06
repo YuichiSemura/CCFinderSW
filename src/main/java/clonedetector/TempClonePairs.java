@@ -1,7 +1,6 @@
 package clonedetector;
 
 import clonedetector.classlist.FileData;
-import clonedetector.classlist.HashCount;
 import clonedetector.classlist.TokenData;
 import common.FileAndString;
 import common.PrintProgress;

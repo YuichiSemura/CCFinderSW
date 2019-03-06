@@ -23,7 +23,7 @@ public class PreProcess {
     /**
      * preList ccfxprepのリスト
      */
-    public ArrayList<Pre> preList = new ArrayList<Pre>();
+    public ArrayList<Pre> preList = new ArrayList<>();
 
     private boolean doEscape, lineendEscape = true;
 
@@ -42,7 +42,7 @@ public class PreProcess {
     private String commentEnd;
     private int commentType;
 
-    private boolean spaceIndent = false;
+    private boolean spaceIndent;
     //private String variableRegex;
     private Pattern p;
 
@@ -64,7 +64,7 @@ public class PreProcess {
 
     private boolean space = false;
 
-    PreProcess(OptionReader or, String language, String directoryName, String filename) {
+    PreProcess(OptionReader or, String language, String filename) {
         this.or = or;
         //System.out.println(language);
         if (language == null) {
@@ -75,7 +75,7 @@ public class PreProcess {
 
         this.filename = filename;
         doEscape = or.languageRuleMap.get(language).doEscape;
-        tokenList = new ArrayList<Token>();
+        tokenList = new ArrayList<>();
         ruleList = or.languageRuleMap.get(language).commentRuleList;
         ruleList_Line = or.languageRuleMap.get(language).commentRuleList_Line;
         literalList = or.languageRuleMap.get(language).literalRuleList;

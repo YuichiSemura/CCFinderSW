@@ -34,14 +34,6 @@ public class TokenName{
     public final static int LINE_START=3;
     public final static int LINE_START_END=4;
 
-    /**
-     * line separator
-     */
-    public final static String CR="\r";
-    public final static String LF="\n";
-    public final static String CRLF="\r\n";
-    public final static String NOTHING="";
-
     public final static String BAR = "----------------------------------------------------------------------";
 
     public static int getSHADOWHash(){

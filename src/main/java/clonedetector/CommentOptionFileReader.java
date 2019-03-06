@@ -4,6 +4,7 @@ import clonedetector.classlist.CommentRule;
 import clonedetector.classlist.LangRuleConstructor;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 import static common.TokenName.*;
@@ -14,7 +15,7 @@ import static common.TokenName.*;
 public class CommentOptionFileReader {
 
     String language;
-    private String filename = "";
+    private String filename;
     OptionReader or;
 
     public CommentOptionFileReader(String language, OptionReader or) {
@@ -39,7 +40,7 @@ public class CommentOptionFileReader {
             System.out.println("Load CommentRuleList: " + inputFileName);
         }
 
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8))) {
             String str;
             while ((str = br.readLine()) != null) { // 改行は含まれない
                 boolean notCommentOut = true;

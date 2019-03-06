@@ -80,6 +80,7 @@ cloneID:<クローンID>\n
 ①  CCFSWに同梱されたIccaという名前のフォルダを開きます．  
 ②  Iccagui.jarを起動します．Geminiの(2)analyze token-based...を選択し，  
 ③  Analysis Result Fileに出力されたファイルを選択し，起動します．  
+
 ### GemX(CCFinderX)
 オプションの「-ccfx」を追加することで，CCFinderXで使用されている形式でファイルの出力がされます．  
 CCFinderX形式のファイルはGemXで開くことができます．  

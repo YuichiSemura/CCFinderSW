@@ -66,7 +66,6 @@ public class ParserEase {
         indentCount = 0;
         lastStart = -1;
         while (i < tokenList.size()) {
-            int line = tokenList.get(i).lineStart + 1; //debug
             switch (tokenList.get(i).token) {
                 case "[":
                     if (i + 1 < tokenList.size() && tokenList.get(i + 1).token.equals("]")
@@ -144,7 +143,10 @@ public class ParserEase {
                 StringBuilder buf = new StringBuilder();
                 buf.append(prev.token);
                 i++;
-                while (tokenList.get(i).token.equals("-") && tokenList.get(i + 1).token.equals(">") && tokenList.get(i + 2).type == IDENTIFIER) {
+                while (i < tokenList.size()
+                        && tokenList.get(i).token.equals("-")
+                        && tokenList.get(i + 1).token.equals(">")
+                        && tokenList.get(i + 2).type == IDENTIFIER) {
                     buf.append(tokenList.get(i).token).append(tokenList.get(i + 1).token).append(tokenList.get(i + 2).token);
                     i += 3;
                 }
@@ -168,10 +170,7 @@ public class ParserEase {
 
     public int caseCheck(ArrayList<Pre> tokenList, int i, ArrayList<Pre> addList) {
         //hoge
-        while (true) {
-            if (i >= tokenList.size() || tokenList.get(i).token.equals("case") || tokenList.get(i).token.equals("default")) {
-                break;
-            }
+        while (i < tokenList.size() && !tokenList.get(i).token.equals("case") && !tokenList.get(i).token.equals("default")) {
             addList.add(tokenList.get(i++));
         }
 
@@ -219,7 +218,7 @@ public class ParserEase {
     }
 
     public ArrayList<Token> convertPreToken(ArrayList<Pre> preList) {
-        ArrayList<Token> newList = new ArrayList<Token>();
+        ArrayList<Token> newList = new ArrayList<>();
         preList.forEach(p -> newList.add(new Token(p)));
         return newList;
     }

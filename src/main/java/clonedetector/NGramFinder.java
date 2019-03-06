@@ -25,18 +25,6 @@ public class NGramFinder {
      * クローン検出のトークン数のしきい値
      */
     private int THRESHOLD;
-    /**
-     * CCFinderX用に出力するかどうか
-     */
-    private boolean isCCFinderX = false;
-    /**
-     * ノーインデントトークンについてのオプション
-     */
-    private boolean nonIndentedFilter = false;
-    /**
-     * オーバーラップクローンについてのオプション
-     */
-    private boolean doFilteringOverlapped = false;
     /**　　
      * 検出範囲についてのオプション
      */
@@ -71,10 +59,7 @@ public class NGramFinder {
 
     public NGramFinder(OptionReader or) {
         this.or = or;
-        this.isCCFinderX = or.isCcfinderx();
         this.THRESHOLD = or.getThreshold();
-        this.nonIndentedFilter = or.isNonIndented();
-        this.doFilteringOverlapped = or.isDoOverlapped();
         this.detectionRange = or.getDetectionRange();
         this.N = or.getN();
 

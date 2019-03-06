@@ -73,7 +73,7 @@ public class Aleesa {
                 int last = x.lastIndexOf(".");
                 String tmp = x.substring(last + 1);
                 if (tmp.equals("g4")) {
-                    filePathList.add(aFileList.getPath());
+                    filePathList.add(x);
                 }
             }
         }
@@ -189,7 +189,7 @@ public class Aleesa {
         int end = 0;
         while (m.find()) {
             end = m.start();
-            strBuilder.append(str.substring(start, end));
+            strBuilder.append(str, start, end);
             strBuilder.append("\\");
             strBuilder.append(m.group());
             start = m.end();

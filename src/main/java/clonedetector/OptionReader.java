@@ -79,7 +79,7 @@ public class OptionReader {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        return searchCommentReservedDirectory(path.getParent().toString());
+        return searchCommentReservedDirectory(path.getParent().getParent().toString());
     }
 
     public static Path getApplicationPath(Class<?> cls) throws URISyntaxException {

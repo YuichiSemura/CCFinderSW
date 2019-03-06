@@ -3,6 +3,7 @@ package clonedetector;
 import clonedetector.classlist.LangRuleConstructor;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 予約語ファイルを読み込むクラス
@@ -22,7 +23,7 @@ public class ReservedWordFileReader {
         rule.reservedFilePath = dirPath + File.separator + filename;
     }
 
-    public void readFile(String inputFileName, LangRuleConstructor rule) {
+    private void readFile(String inputFileName, LangRuleConstructor rule) {
         File file = new File(inputFileName);
         if (!file.exists()) {
             file = new File(inputFileName);
@@ -33,7 +34,7 @@ public class ReservedWordFileReader {
             }
         }
         System.out.println("Load ReservedWordList: " + inputFileName);
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));) {
             String str;
             while ((str = br.readLine()) != null) { // 改行は含まれない
                 rule.reservedWordList.add(str);

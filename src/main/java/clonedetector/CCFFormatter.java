@@ -15,7 +15,6 @@ public class CCFFormatter {
     private int[] tokenCountList;
     private ArrayList<String> filePathList;
     private ArrayList<String> fileNameList;
-    private String directoryNameAbsolute;
     private ClonePairData cpd;
 
     private NGramFinder nf;
@@ -28,7 +27,6 @@ public class CCFFormatter {
         tokenCountList = fileData.tokenCountList;
         filePathList = fileData.filePathList;
         fileNameList = fileData.fileNameList;
-        directoryNameAbsolute = fileData.directoryNameAbsolute;
 
         this.nf = nf;
         this.language = or.getLanguage();
@@ -128,7 +126,7 @@ public class CCFFormatter {
             buf.append(tokennum);
 
             linenum = nf.tokenList[count].lineEnd;
-            columnnum = nf.tokenList[count].columnEnd + 1;// +2
+            columnnum = nf.tokenList[count].columnEnd;
             tokennum = tokennum + distance - 1;
             if (!doneLNR) {
                 LNR = calLNR(count - distance + 1, distance);
@@ -153,22 +151,20 @@ public class CCFFormatter {
         for (int i = 0; i < distance; i++) {
             lifeDeath[i] = true;
         }
-        for (int i = first; i < first + distance; i++) {
-            for (int j = i + 1; j < first + distance; j++) {
-                if (nf.tokenList[i].hash == nf.tokenList[j].hash) {
-                    int k = 1; //maybe 0
-                    while (i + k < j && j + k < first + distance) {
-                        if (nf.tokenList[i + k].hash != nf.tokenList[j + k].hash) {
-                            break;
-                        } else if (i + k == j - 1) {
-                            for (int l = i; l <= j + k; l++) {
-                                lifeDeath[l] = false;
-                            }
-                            break;
-                        }
-                        k++;
+        for (int a = first; a < first + distance; a++) {
+            for (int b = a + 1; b < first + distance; b++) {
+                int c = 0;
+                while (true) {
+                    if (nf.tokenList[a + c].hash != nf.tokenList[b + c].hash) {
+                        break;
                     }
-
+                    if (a + c == b - 1 || a + c >= b || b + c >= first + distance) {
+                        for (int d = 0; d < c * 2; d++) {
+                            lifeDeath[a - first + d] = false;
+                        }
+                        break;
+                    }
+                    c++;
                 }
             }
         }
