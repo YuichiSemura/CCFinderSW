@@ -38,7 +38,6 @@ public class FileAndString {
         }
     }
 
-    //
     public static ArrayList<String> searchDirectory(String directory) {// 通常使用
         ArrayList<String> list = new ArrayList<>();
         File cDirectory = new File(directory);

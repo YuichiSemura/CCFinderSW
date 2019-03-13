@@ -129,7 +129,7 @@ public class CCFFormatter {
             columnnum = nf.tokenList[count].columnEnd;
             tokennum = tokennum + distance - 1;
             if (!doneLNR) {
-                LNR = calLNR(count - distance + 1, distance);
+                LNR = MetricsCalculator.calLNR(count - distance + 1, distance, nf.tokenList);
                 doneLNR = true;
             }
             buf.append("\t");
@@ -144,41 +144,5 @@ public class CCFFormatter {
         }
         buf.append("#end{set}");
         buf.append("\n");
-    }
-
-    private int calLNR(int first, int distance) {
-        boolean lifeDeath[] = new boolean[distance];
-        for (int i = 0; i < distance; i++) {
-            lifeDeath[i] = true;
-        }
-        for (int a = first; a < first + distance; a++) {
-            for (int b = a + 1; b < first + distance; b++) {
-                int c = 0;
-                while (true) {
-                    if (nf.tokenList[a + c].hash != nf.tokenList[b + c].hash) {
-                        break;
-                    }
-                    if (a + c == b - 1 || a + c >= b || b + c >= first + distance) {
-                        for (int d = 0; d < c * 2; d++) {
-                            lifeDeath[a - first + d] = false;
-                        }
-                        break;
-                    }
-                    c++;
-                }
-            }
-        }
-        int life = 0, maxLife = 0;
-        for (int i = 0; i < distance; i++) {
-            if (lifeDeath[i]) {
-                life++;
-            } else {
-                maxLife = Math.max(life, maxLife);
-                life = 0;
-            }
-        }
-        if (life != 0)
-            maxLife = Math.max(life, maxLife);
-        return maxLife;
     }
 }

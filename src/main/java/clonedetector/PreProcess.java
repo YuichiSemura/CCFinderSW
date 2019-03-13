@@ -178,7 +178,8 @@ public class PreProcess {
                 // literal
                 else if (i != (tmpIndex = isLiteral(i, str))) {
                     i = tmpIndex;
-                    tokenRegister(str.substring(startIndex, i), startLine, startClm, nowLine, i - lastNewLine, startIndex, i, STRING);
+                    String tmpStr = str.substring(startIndex, i);
+                    tokenRegister(tmpStr, startLine, startClm, nowLine, i - lastNewLine, startIndex, i, STRING);
                 }
 
                 // 英数字
@@ -443,18 +444,6 @@ public class PreProcess {
     }
 
     /**
-     * hash Register
-     */
-    private void tokenRegister(String str, int lineS, int clmS, int lineE, int clmE, int sumStart, int sumEnd, int type) {
-        zeroTokenCheck(str, lineS, clmS, sumStart);
-        tokenListAdd(new Token(str, lineS, clmS, lineE, clmE, type));
-        preListAdd(new Pre(str, lineS, clmS, lineE, clmE, type, sumStart, sumEnd));
-
-        beforeToken = str;
-        beforeType = type;
-    }
-
-    /**
      * ブロックを簡単に認識して長さのないトークンとして埋め込んでいる
      * cond 条件文の開始
      * loop ループ文の開始
@@ -520,9 +509,20 @@ public class PreProcess {
         preList.add(tmp);
     }
 
+    /**
+     * hash Register
+     */
+    private void tokenRegister(String str, int lineS, int clmS, int lineE, int clmE, int sumStart, int sumEnd, int type) {
+        zeroTokenCheck(str, lineS, clmS, sumStart);
+        tokenListAdd(new Token(str, lineS, clmS, lineE, clmE, type));
+        preListAdd(new Pre(str, lineS, clmS, lineE, clmE, type, sumStart, sumEnd));
+
+        beforeToken = str;
+        beforeType = type;
+    }
+
     private void zeroTokenAdd(String str, int lineS, int clmS, int sum) {
         tokenListAdd(new Token(str, lineS, clmS, lineS, clmS, ZERO));
-
         preListAdd(new Pre(str, lineS, clmS, lineS, clmS, ZERO, sum, sum));
     }
 

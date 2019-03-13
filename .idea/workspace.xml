@@ -1,101 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fe3014f-1211-4de8-9b3d-1feb11910cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CCFinderSW-0.9.1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/dist/TestSource/Awe/ABAB.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/dist/TestSource/Awe/ABABy.c" afterDir="false" />
+    <list default="true" id="2fe3014f-1211-4de8-9b3d-1feb11910cc3" name="Default Changelist" comment="[update] 1.0">
+      <change afterPath="$PROJECT_DIR$/src/main/java/clonedetector/MetricsCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ALEESA.CCFinderSW.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ALEESA.CCFinderSW.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ALEESA.CCFinderSW.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ALEESA.CCFinderSW.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCFinderSW-0.9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCFinderSW-0.9.1.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsageJp/Option.md" beforeDir="false" afterPath="$PROJECT_DIR$/UsageJp/OptionFile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsageJp/OutputAndViewer.md" beforeDir="false" afterPath="$PROJECT_DIR$/UsageJp/OutputAndViewer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsageJp/Run.md" beforeDir="false" afterPath="$PROJECT_DIR$/UsageJp/Run.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$BlockSetContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$BlockSetContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$CharacterRangeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$CharacterRangeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerAltContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerAltContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerAltListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerAltListContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerBlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerBlockContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerCommandsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerCommandsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerElementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerElementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerElementsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$LexerElementsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$NotSetContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$NotSetContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$SetElementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$SetElementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$TerminalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser$TerminalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/ANTLRv4Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/LexerAdaptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/ANTLRv4Parser/LexerAdaptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/Aleesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/Aleesa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/CommentsRemoverUsingRegex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/CommentsRemoverUsingRegex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/aleesa/PreProcessEase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/aleesa/PreProcessEase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ccfindersw/CCFSWData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ccfindersw/CCFSWData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ccfindersw/CCFSWLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ccfindersw/CCFSWLauncher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFSWFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFSWFormatter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXDReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXDReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXPrepOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXPrepOutput.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXPrepReload.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CCFXPrepReload.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CloneDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CloneDetector.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CloneDetectorCLIParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CloneDetectorCLIParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CommentOptionFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/CommentOptionFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/NGramFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/NGramFinder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/OptionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/OptionReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/Pair2Set.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/Pair2Set.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/ParserEase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/ParserEase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/PreProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/PreProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/ReservedWordFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/ReservedWordFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/RigelJSONFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/RigelJSONFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/TempClonePairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/TempClonePairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/classlist/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/classlist/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/clonedetector/classlist/TokenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/clonedetector/classlist/TokenData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/FileAndString.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/FileAndString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/JudgeCharset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/JudgeCharset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/PrintProgress.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/PrintProgress.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/TokenName.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/TokenName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/CCFinderSW-0.9.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/CCFinderSW-0.9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/CCFinderSW-0.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/CCFinderSW-0.9.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/scripts/CCFinderSW" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/CCFinderSW" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/scripts/CCFinderSW.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/CCFinderSW.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/dist/TestSource/Awe/AB.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/dist/TestSource/Awe/AB.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/dist/TestSource/Awe/AButf8.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleesa/Aleesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleesa/Aleesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aleesa/PreProcessEase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aleesa/PreProcessEase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CCFFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CCFFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CCFSWFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CCFSWFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXPrepOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXPrepOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXDReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXDReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXPrepReload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CCFXPrepReload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CloneDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CloneDetector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CloneDetectorCLIParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CloneDetectorCLIParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/CommentOptionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/CommentOptionFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/NGramFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/NGramFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/Pair2Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/Pair2Set.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/ParserEase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/ParserEase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/PreProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/PreProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/ReservedWordFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/ReservedWordFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/RigelJSONFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/RigelJSONFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/TempClonePairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/TempClonePairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/classlist/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/classlist/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clonedetector/classlist/TokenData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clonedetector/classlist/TokenData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/FileAndString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/FileAndString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/JudgeCharset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/JudgeCharset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/PrintProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/PrintProgress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/TokenName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/TokenName.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -152,36 +101,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/CCFSWFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aleesa/Aleesa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="799">
               <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -220,8 +142,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/CloneDetectorCLIParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+            <state relative-caret-position="714">
+              <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/MetricsCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/NGramFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="221">
+                <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/TokenName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1364#1365#0" expanded="true" />
+                <element signature="e#1404#1405#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,6 +212,12 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="YuichiSemura &lt;y-semura@ist.osaka-u.ac.jp&gt;" />
+        <option value="y-semura &lt;y-semura@ist.osaka-u.ac.jp&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -238,15 +227,15 @@
         <option value="$PROJECT_DIR$/src/main/java/clonedetector/CCFFormatter.java" />
         <option value="$PROJECT_DIR$/UsageJp/OutputAndViewer.md" />
         <option value="$PROJECT_DIR$/UsageJp/Run.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ccfindersw/CCFSWData.java" />
         <option value="$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1147" />
+    <option name="x" value="1146" />
     <option name="y" value="324" />
     <option name="width" value="2712" />
     <option name="height" value="1107" />
@@ -262,33 +251,44 @@
           <expand>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="distributions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GradleBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="GradleBuild" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aleesa" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CCFinderSW" type="b2602c69:ProjectViewProjectNode" />
@@ -304,7 +304,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowMaven.ShowToolbar" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551873967276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552520582611" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -445,6 +445,14 @@
       <option name="presentableId" value="Default" />
       <updated>1551122605300</updated>
     </task>
+    <task id="LOCAL-00001" summary="[update] 0.9.1">
+      <created>1551875161619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551875161619</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -456,7 +464,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12286282" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.13001987" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Build Variants" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -465,7 +473,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3634166" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8718121" weight="0.29492345" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8718121" visible="true" weight="0.29492345" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4986577" weight="0.3992298" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -522,6 +530,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[update] 0.9.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] 0.9.1" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -575,17 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/UsageJp/Run.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -622,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/CloneDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-544">
@@ -647,6 +641,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="101" column="30" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aleesa/Aleesa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,25 +684,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/CloneDetectorCLIParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+        <state relative-caret-position="714">
+          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aleesa/Aleesa.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/MetricsCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/NGramFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/clonedetector/OptionReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/TokenName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+        <state relative-caret-position="306">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

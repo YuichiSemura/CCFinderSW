@@ -59,21 +59,7 @@ public class Pair2Set {
             i++;
         }
         registerCloneSet(pair, cloneID);
-
-        //クローンペアを2倍にして返す
-        int[][] pair2 = new int[pair.length * 2][4];
-        for (int j = 0; j < pair.length; j++) {
-            pair2[j * 2][0] = pair[j][0];
-            pair2[j * 2][1] = pair[j][1];
-            pair2[j * 2][2] = pair[j][2];
-            pair2[j * 2][3] = pair[j][3];
-            pair2[j * 2 + 1][0] = pair[j][1];
-            pair2[j * 2 + 1][1] = pair[j][0];
-            pair2[j * 2 + 1][2] = pair[j][2];
-            pair2[j * 2 + 1][3] = pair[j][3];
-        }
-
-        return pair2;
+        return pair;
     }
 
     private void makePlaceAndRoadList(int[] pair, int index) {

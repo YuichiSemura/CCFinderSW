@@ -32,8 +32,9 @@ public class CloneDetectorCLIParser {
     private final String ccfsw = "ccfsw";
     private final String charset = "charset";
     private final String help = "help";
-    private final String p1 = "p1";
-    private final String p2 = "p2";
+    private final String tks = "tks";
+    private final String rnr = "rnr";
+
 
     public CloneDetectorCLIParser(OptionReader or) {
         this.or = or;
@@ -84,6 +85,10 @@ public class CloneDetectorCLIParser {
         opts.addOption(nolx, "noLexer", false,
                 "use when in exactly the same condition as last\n" +
                 "Example: -nolx ");
+        opts.addOption(tks, "TKS", true,
+                "Size of a set of tokens in a code fragment \nExample: -tks 10 ");
+        opts.addOption(rnr, "RNR", true,
+                "Ratio of non-repeated tokens in a code fragment(0 < argument < 1.0) \nExample: -rnr 0.5 ");
     }
 
     public void commandline(String[] args) {
@@ -263,6 +268,24 @@ public class CloneDetectorCLIParser {
                 System.out.println("ANTLR mode");
                 or.setANTLRMode(true);
                 or.setExtensionRegex(extensionRegex);
+            }
+
+            if (cl.hasOption(tks)) {
+                int tksNum = Integer.parseInt(cl.getOptionValue(tks));
+                if (tksNum <= 0) {
+                    System.out.println("Error: tks arg >= 1");
+                }
+                System.out.println("TKS = " + tksNum);
+                or.setTKS(tksNum);
+            }
+
+            if (cl.hasOption(rnr)) {
+                float rnrNum = Float.parseFloat(cl.getOptionValue(rnr));
+                if (rnrNum < 0 || rnrNum > 1) {
+                    System.out.println("Error: rnr 0 <= arg <= 1");
+                }
+                System.out.println("RNR = " + rnrNum);
+                or.setRNR(rnrNum);
             }
 
             or.setDirectory(directory);

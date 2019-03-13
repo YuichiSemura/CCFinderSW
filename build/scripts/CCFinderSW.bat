@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\CCFinderSW-0.9.1.jar;%APP_HOME%\lib\antlr-4.7.1-complete.jar;%APP_HOME%\lib\commons-cli-1.4.jar
+set CLASSPATH=%APP_HOME%\lib\CCFinderSW-1.0.jar;%APP_HOME%\lib\antlr-4.7.1-complete.jar;%APP_HOME%\lib\commons-cli-1.4.jar
 
 @rem Execute CCFinderSW
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CC_FINDER_SW_OPTS%  -classpath "%CLASSPATH%" ccfindersw.CCFSWLauncher %CMD_LINE_ARGS%

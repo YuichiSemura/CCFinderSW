@@ -63,7 +63,7 @@ public class CloneDetector {
         }
     }
 
-    public static void cloneDetection(OptionReader or, NGramFinder nfBoss, FileData fd, ClonePairData cpd) {
+    public void cloneDetection(OptionReader or, NGramFinder nfBoss, FileData fd, ClonePairData cpd) {
         System.out.println("---CloneDetection start---");
         Time time = new Time();
         int group = or.getGroup();
@@ -98,9 +98,61 @@ public class CloneDetector {
         if (cpd.pairListTrue.length > 0) {
             Pair2Set ps = new Pair2Set();
             cpd.pairListTrue = ps.makeCloneSet(cpd.pairListTrue);
+
+            //metrics filtering
+            if (or.getRNR() != 0 || or.getTKS() != 0) {
+                System.out.println("Calculating Metrics of Clone Pairs...");
+                cpd.pairListTrue = metricsFiltering(or, nfBoss, cpd.pairListTrue);
+            } else {
+                cpd.pairListTrue = convertTwice(cpd.pairListTrue);
+            }
+
             System.out.println("ClonePairData size=" + cpd.pairListTrue.length);
         }
         System.out.println("---CloneDetection end " + time.end() + "---\n");
+    }
+
+    private int[][] metricsFiltering(OptionReader or, NGramFinder nfBoss, int[][] pair) {
+        ArrayList<int[]> tmpClone = new ArrayList<>();
+        for (int[] ints : pair) {
+            int count = ints[0];
+            int distance = ints[2];
+            float RNR = or.getRNR() == 0 ? 0 :
+                    MetricsCalculator.calRNR(count - distance + 1, distance, nfBoss.tokenList);
+            int TKS = or.getTKS() == 0 ? 0 :
+                    MetricsCalculator.calTKS(count - distance + 1, distance, nfBoss.tokenList);
+            if (RNR >= or.getRNR() && TKS >= or.getTKS()) {
+                tmpClone.add(ints);
+            }
+        }
+        int[][] pair2 = new int[tmpClone.size() * 2][4];
+        for (int j = 0; j < tmpClone.size(); j++) {
+            pair2[j * 2][0] = tmpClone.get(j)[0];
+            pair2[j * 2][1] = tmpClone.get(j)[1];
+            pair2[j * 2][2] = tmpClone.get(j)[2];
+            pair2[j * 2][3] = tmpClone.get(j)[3];
+            pair2[j * 2 + 1][0] = tmpClone.get(j)[1];
+            pair2[j * 2 + 1][1] = tmpClone.get(j)[0];
+            pair2[j * 2 + 1][2] = tmpClone.get(j)[2];
+            pair2[j * 2 + 1][3] = tmpClone.get(j)[3];
+        }
+        return pair2;
+    }
+
+    private int[][] convertTwice(int[][] pair) {
+        //クローンペアを2倍にして返す
+        int[][] pair2 = new int[pair.length * 2][4];
+        for (int j = 0; j < pair.length; j++) {
+            pair2[j * 2][0] = pair[j][0];
+            pair2[j * 2][1] = pair[j][1];
+            pair2[j * 2][2] = pair[j][2];
+            pair2[j * 2][3] = pair[j][3];
+            pair2[j * 2 + 1][0] = pair[j][1];
+            pair2[j * 2 + 1][1] = pair[j][0];
+            pair2[j * 2 + 1][2] = pair[j][2];
+            pair2[j * 2 + 1][3] = pair[j][3];
+        }
+        return pair2;
     }
 
     private void deleteCcfswTmp(OptionReader or) {

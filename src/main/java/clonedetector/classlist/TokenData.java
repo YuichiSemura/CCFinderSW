@@ -26,8 +26,8 @@ public class TokenData {
         this.columnEnd = columnEnd;
     }
 
-    public TokenData(Token token, int file, int num) {
-        this.hash = token.hash;
+    public TokenData(Token token, int hash, int file, int num) {
+        this.hash = hash;
         this.lineStart = token.lineStart;
         this.lineEnd = token.lineEnd;
         this.columnStart = token.columnStart;

@@ -50,7 +50,6 @@ public class CCFXDReader {
 
             int j = i - 31;
             int file = ByteBuffer.wrap(swapArray(ccfxd, j, tmp)).getInt() - 1;
-
             j = j + 4;
             int token = ByteBuffer.wrap(swapArray(ccfxd, j, tmp)).getInt();
             j = j + 4;

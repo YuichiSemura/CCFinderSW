@@ -5,7 +5,6 @@ import clonedetector.classlist.HashCount;
 import clonedetector.classlist.Token;
 import clonedetector.classlist.TokenData;
 import common.PrintProgress;
-import common.Time;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -127,17 +126,17 @@ public class NGramFinder {
     private void makeEachNgram(FileData fd, int fileNum, String language) {
         CCFXPrepReload rl = new CCFXPrepReload(fd.directoryName, language);
         rl.reload(fd.filePathList.get(fileNum));
-        makeFileToken(fileNum, fd.tokenIndexList[fileNum], rl.tokenList);
+        makeFileTokenData(fileNum, fd.tokenIndexList[fileNum], rl.tokenList, or.languageRuleMap.get(language).reserved);
         makeFileNgram(fileNum, fd.NGramIndexList[fileNum], rl.tokenList, or.languageRuleMap.get(language).reserved);
     }
 
     /**
      *
      */
-    private void makeFileToken(int fileNumber, int count, ArrayList<Token> lineList) {
+    private void makeFileTokenData(int fileNumber, int count, ArrayList<Token> lineList, boolean reserved) {
         int i = 0;
         for (Token token : lineList) {
-            tokenList[count + i] = new TokenData(token, fileNumber, i);
+            tokenList[count + i] = new TokenData(token, getNewHash(reserved, token), fileNumber, i);
             i++;
         }
     }
@@ -152,20 +151,14 @@ public class NGramFinder {
         for (int j = N - 1; j < lineList.size(); j++) {
             int tmpHash = 0;
             for (int k = N - 1; k >= 0; k--) {
-                if (reserved && lineList.get(j - k).type == IDENTIFIER) {
-                    tmpHash += getSHADOWHash();
-                } else if (lineList.get(j - k).type == STRING) {
-                    tmpHash += getDARKHash();
-                } else if (lineList.get(j - k).type == NUMBER) {
-                    tmpHash += getREAPERHash();
-                } else {
-                    tmpHash += lineList.get(j - k).hash;
-                }
+                Token token = lineList.get(j - k);
+                tmpHash += getNewHash(reserved, token);
                 tmpHash *= N - 1;
             }
             sethList[count + j - N + 1] = new HashCount(tmpHash, count + j - N + 1, fileNumber, j - N + 1);
         }
     }
+
 
     /**
      * main of clone detection
@@ -210,6 +203,11 @@ public class NGramFinder {
                                 jFile == sethList[jStartIndex + x].file && kFile == sethList[kStartIndex + x].file &&
                                 sethList[jStartIndex + x].hash == sethList[kStartIndex + x].hash);
                         x--;
+                        if (kStartIndex + x + 1 == sethList.length || sethList[kStartIndex + x + 1].file != kFile) {
+                            if (tokenList[fd.tokenIndexList[kFile] + sethList[kStartIndex + x].num + N - 1].hash == "eof".hashCode()) {
+                                x--;
+                            }
+                        }
                         if (x + N < THRESHOLD) {
                             continue;
                         }

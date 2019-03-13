@@ -32,7 +32,7 @@ public class Token {
         this.lineEnd = lineE;
         this.columnStart = clmS;
         this.columnEnd = clmE;
-        this.type = (byte) type;
+        this.type = type;
     }
 
     public Token(Pre pre) {

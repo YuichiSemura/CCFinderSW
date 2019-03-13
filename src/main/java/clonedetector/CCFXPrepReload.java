@@ -69,7 +69,7 @@ public class CCFXPrepReload {
                 type = RESERVE;
                 value = three.substring(2);
             } else if (three.length() > 2 && three.substring(0, 2).equals("l_")) {
-                if (three.charAt(2) == '\'' || three.charAt(2) == '"') {
+                if (three.substring(0, three.indexOf("|")).equals("l_string")) {
                     type = STRING;
                 } else {
                     type = NUMBER;

@@ -1,5 +1,7 @@
 package common;
 
+import clonedetector.classlist.Token;
+
 public class TokenName{
     /**
      * TOKEN Type
@@ -20,10 +22,10 @@ public class TokenName{
     /**
      * use in normalization
      */
-    public final static String SHADOW="$";
-    public final static String DARK="&";
-    public final static String REAPER="=";
-    public final static String BOOKER="#";
+    public final static String SHADOW = "$ALL-FICTION";
+    public final static String DARK = "&DEVIL-STYLE";
+    public final static String REAPER = "=HUNDRED-GAUNTLET";
+    public final static String BOOKER = "#BOOK-MAKER";
 
     /**
      * comment type
@@ -50,5 +52,16 @@ public class TokenName{
 
     public static int getBOOKERHash(){
         return BOOKER.hashCode();
+    }
+
+    public static int getNewHash(boolean reserved, Token token) {
+        if (reserved && token.type == IDENTIFIER) {
+            return getSHADOWHash();
+        } else if (token.type == STRING) {
+            return getDARKHash();
+        } else if (token.type == NUMBER) {
+            return getREAPERHash();
+        }
+        return token.hash;
     }
 }

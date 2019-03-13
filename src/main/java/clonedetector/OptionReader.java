@@ -33,9 +33,6 @@ public class OptionReader {
     private boolean isJson = false;
     private boolean jsonIndent = true;
     private boolean cloneSet = true;
-    private boolean removeComments = false;
-    private boolean nonIndented = false;
-    private boolean doOverlapped = false;
     private int detectionRange = 0;
     private boolean spaceIndent = false;
     private boolean noLexer = false;
@@ -44,6 +41,8 @@ public class OptionReader {
     private int group = 1;
     private boolean ANTLRMode = false;
     private String extensionRegex;
+    private int tks = 0;
+    private float rnr = 0;
     public Aleesa als = new Aleesa();
 
     public HashMap<String, LangRuleConstructor> languageRuleMap = new HashMap<>();
@@ -200,30 +199,6 @@ public class OptionReader {
         this.ccfinderx = ccfinderx;
     }
 
-    public boolean isRemoveComments() {
-        return removeComments;
-    }
-
-    public void setRemoveComments(boolean removeComments) {
-        this.removeComments = removeComments;
-    }
-
-    public boolean isNonIndented() {
-        return nonIndented;
-    }
-
-    public void setNonIndented(boolean nonIndented) {
-        this.nonIndented = nonIndented;
-    }
-
-    public boolean isDoOverlapped() {
-        return doOverlapped;
-    }
-
-    public void setDoOverlapped(boolean doOverlapped) {
-        this.doOverlapped = doOverlapped;
-    }
-
     public int getDetectionRange() {
         return detectionRange;
     }
@@ -346,6 +321,22 @@ public class OptionReader {
 
     public void setJsonIndent(boolean jsonIndent) {
         this.jsonIndent = jsonIndent;
+    }
+
+    public int getTKS() {
+        return tks;
+    }
+
+    public void setTKS(int tks) {
+        this.tks = tks;
+    }
+
+    public float getRNR() {
+        return rnr;
+    }
+
+    public void setRNR(float rnr) {
+        this.rnr = rnr;
     }
 
 }
