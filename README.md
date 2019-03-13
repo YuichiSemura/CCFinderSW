@@ -13,7 +13,7 @@ CCFinderSW (CCFSW) はトークンベースのコードクローン検出ツー�
 いくつかのドキュメントが存在します．  
 実行について  [Run.md](UsageJp/Run.md)  
 予約語ファイル・コメントファイルについて [Option.md](UsageJp/Option.md)  
-利用できるViewerについて  [OutputAndViewer.md](OutputAndViewer.md)  
+利用できるViewerについて  [OutputAndViewer.md](UsageJp/OutputAndViewer.md)  
 考えられるトラブルについて [TroubleShooting.md](UsageJp/TroubleShooting.md)
 
 ## 必要なもの
