@@ -12,7 +12,7 @@ CCFinderSW (CCFSW) はトークンベースのコードクローン検出ツー�
 ## 使い方
 いくつかのドキュメントが存在します．  
 実行について  [Run.md](UsageJp/Run.md)  
-予約語ファイル・コメントファイルについて [Option.md](UsageJp/Option.md)  
+予約語ファイル・コメントファイルについて [OptionFile.md](UsageJp/OptionFile.md)  
 利用できるViewerについて  [OutputAndViewer.md](UsageJp/OutputAndViewer.md)  
 考えられるトラブルについて [TroubleShooting.md](UsageJp/TroubleShooting.md)
 
@@ -43,4 +43,4 @@ CCFSWは字句解析を行いますが，言語ごとに個別の字句解析機
 オプションファイルを使用することで各言語に合わせた字句解析を行います．  
 （また同時に，各言語に最適化されたレクサーアルゴリズムではない，ということも意味します．）  
 このオプションファイルはユーザ自身が変更できるものです．  
-オプションファイルの記法については, Comment.md，ReservedWord.md を参照してください． 
+オプションファイルの記法については, [OptionFile.md](UsageJp/OptionFile.md)  を参照してください． 
