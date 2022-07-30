@@ -2,11 +2,11 @@
 
 ### 実行時のコンソールの出力に「LOC = 0」がある
   拡張子の設定ミスであることが多いです．  
-  [OptionFile.md](UsageJp/OptionFile.md)のコメントファイルの説明を参照してください．
+  [OptionFile.md](/UsageJp/OptionFile.md)のコメントファイルの説明を参照してください．
   
 ### Commentファイルの内容が反映されていない  
   Commentファイルのファイル名が正しいか確認してください．  
-  [OptionFile.md](UsageJp/OptionFile.md)を参考に，文法が正しいか確認してください．  
+  [OptionFile.md](/UsageJp/OptionFile.md)を参考に，文法が正しいか確認してください．  
   Commentファイルの文字コードをBOMなしUTF-8に変更してください．
 
 ### ファイルが存在しないなどのエラー（例外）が発生する
