@@ -12,7 +12,7 @@ The tool detects and outputs clone pairs that are similar to each other, and exc
 
 ## How to use
 There are several documents.  
-About execution [Run.md](UsageEn/Run.md)  
+About execution [Run.md](Usage/Run.md)  
 About reserved word files and comment files [OptionFile.md](Usage/OptionFile.md)  
 About Available Viewers [OutputAndViewer.md](Usage/OutputAndViewer.md)  
 Possible troubles shooting[TroubleShooting.md](Usage/TroubleShooting.md)
