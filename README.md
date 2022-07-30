@@ -23,9 +23,9 @@ Possible troubles shooting[TroubleShooting.md](Usage/TroubleShooting.md)
 - We are planning to reduce the amount of RAM as much as possible.
 
 ## Former Versions 
-[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder.html)
+[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder-e.html)
 
-[CCFinderX](http://www.ccfinder.net/ccfinderxos-j.html)
+[CCFinderX](http://www.ccfinder.net/ccfinderxos.html)
 
 ## Test Environment
 Windows 10 Pro
