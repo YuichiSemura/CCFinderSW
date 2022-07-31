@@ -96,7 +96,7 @@ If none of the following options are included, the program assumes that -ccf is 
 - A comment rule file and a reserved word's list file for the language are required for execution.
    - Comment rule file
       - **A minimum description is required.**
-      - ** Details are described in [OptionFile.md](/Usage/OptionFile.md) **.
+      - Details are described in [OptionFile.md](/Usage/OptionFile.md).
 
    - Reserved word's list file
       - It is not required, but recommended.

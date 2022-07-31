@@ -35,7 +35,7 @@ See LICENSE.
 This software contains libraries distributed under Apache Licence 2.0.
 
 ## Other Information
-Author: Yuichi Semura
+Author: Yuichi Semura  
 Affiliation: Graduate School of Information Science and Technology, Osaka University, Osaka, Japan
 
 ## Paper Information
