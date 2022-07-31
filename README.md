@@ -1,46 +1,59 @@
 # CCFinderSW
-CCFinderSW (CCFSW) はトークンベースのコードクローン検出ツールです．
+CCFinderSW (CCFSW) is a token-based code clone detection tool.
+[Japanese Readme](READMEJP.md) is also available.
 
-## コードクローンとは
-コードクローンはソースコード中に存在する一致または類似するコード片のことを指します．  
-互いに類似したコード片をクローンペアと呼び，本ツールはこれを検出し，出力します．  
-また現在クローンペアは，文の挿入・削除など含むものは対象外としています．
+## What is a code clone?
+A code clone is a matching or similar piece of code that exists in source code.  
+The tool detects and outputs clone pairs, which are pieces of code that are similar to each other.  
+The tool detects and outputs clone pairs that are similar to each other, and excludes clone pairs that contain inserted or deleted sentences.
 
-## 最新バージョン
+## Latest version
 [CCFinderSW-1.0.zip](build/distributions/CCFinderSW-1.0.zip)  
 
-## 使い方
-いくつかのドキュメントが存在します．  
-実行について  [Run.md](UsageJp/Run.md)  
-予約語ファイル・コメントファイルについて [OptionFile.md](UsageJp/OptionFile.md)  
-利用できるViewerについて  [OutputAndViewer.md](UsageJp/OutputAndViewer.md)  
-考えられるトラブルについて [TroubleShooting.md](UsageJp/TroubleShooting.md)
+## How to use
+There are several documents.  
+About execution [Run.md](Usage/Run.md)  
+About reserved word files and comment files [OptionFile.md](Usage/OptionFile.md)  
+About Available Viewers [OutputAndViewer.md](Usage/OutputAndViewer.md)  
+Possible troubles shooting[TroubleShooting.md](Usage/TroubleShooting.md)
 
-## 必要なもの
+## Required Environment
 - Java Runtime Environment( >=8 )   
-  現在，Javaのみで実装しています．
-- 出来る限り多くのRAM...  
-  省メモリ化を予定しています．
+  Currently, this program is implemented in Java only.
+- We are planning to reduce the amount of RAM as much as possible.
 
 ## Former Versions 
-[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder.html)
+[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder-e.html)
 
-[CCFinderX](http://www.ccfinder.net/ccfinderxos-j.html)
+[CCFinderX](http://www.ccfinder.net/ccfinderxos.html)
 
-## テスト環境
+## Test Environment
 Windows 10 Pro
 
 ## Copyright and Licensing
 See LICENSE.  
-このソフトウェアにはApache Licence2.0で配布されているライブラリが含まれています．
+This software contains libraries distributed under Apache Licence 2.0.
 
-## その他の情報
-著者: 瀬村 雄一
-所属: 大阪大学大学院情報科学研究科 井上研究室
+## Other Information
+Author: Yuichi Semura  
+Affiliation: Graduate School of Information Science and Technology, Osaka University, Osaka, Japan
 
-## 利用についての注意点
-CCFSWは字句解析を行いますが，言語ごとに個別の字句解析機構は持っていません．  
-オプションファイルを使用することで各言語に合わせた字句解析を行います．  
-（また同時に，各言語に最適化されたレクサーアルゴリズムではない，ということも意味します．）  
-このオプションファイルはユーザ自身が変更できるものです．  
-オプションファイルの記法については, [OptionFile.md](UsageJp/OptionFile.md)  を参照してください． 
+## Paper Information
+The detailed information is described in our paper. The following is our paper information.
+```
+@INPROCEEDINGS{8305997,  
+  author={Semura, Yuichi and Yoshida, Norihiro and Choi, Eunjong and Inoue, Katsuro},  
+  booktitle={2017 24th Asia-Pacific Software Engineering Conference (APSEC)},   
+  title={CCFinderSW: Clone Detection Tool with Flexible Multilingual Tokenization},   
+  year={2017}, 
+  pages={654-659},  
+  doi={10.1109/APSEC.2017.80}
+}
+```
+
+## Notes on use
+CCFSW performs lexical analysis, but does not have separate lexical analysis mechanisms for each language.  
+CCFSW performs lexical analysis tailored to each language by using optional files.  
+(At the same time, this does not mean that the lexer algorithm is optimized for each language.)  
+This option file can be modified by the user.  
+Refer [OptionFile.md](Usage/OptionFile.md) for the notation of the option file. 
