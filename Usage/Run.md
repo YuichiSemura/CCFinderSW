@@ -39,8 +39,10 @@
    - Extracts information used for comment removal and identifier identification from the grammar files in `src/main/dist/grammarsv4`.
    - Normal rules cannot be used.
    - The argument must be a regular expression of the extension name to recognize the target source code.  (just put the extensions in a row with a vertical bar between).
-       - Example: -antlr h|hh|hpp|hxx|c|cc|cpp|cxx  
-                  -antlr py
+      ```
+       - Example1: -antlr h|hh|hpp|hxx|c|cc|cpp|cxx  
+       - Example2: -antlr py
+      ```
 - -charset \<arg>   
    - The character encoding of the target file can be specified.
    - The analysis of source code that uses double-byte characters requires correct character encoding recognition.
@@ -96,7 +98,7 @@ If none of the following options are included, the program assumes that -ccf is 
 - A comment rule file and a reserved word's list file for the language are required for execution.
    - Comment rule file
       - **A minimum description is required.**
-      - ** Details are described in [OptionFile.md](/Usage/OptionFile.md) **.
+      - Details are described in [OptionFile.md](/Usage/OptionFile.md).
 
    - Reserved word's list file
       - It is not required, but recommended.
