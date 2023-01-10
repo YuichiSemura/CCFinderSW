@@ -4,11 +4,7 @@ plugins {
 }
 
 group 'CCFinderSW'
-version '1.0'
-
-compileJava {
-    options.encoding = 'UTF-8'
-}
+version '1.0.1'
 
 sourceCompatibility = 1.8
 mainClassName = 'ccfindersw.CCFSWLauncher'
@@ -19,8 +15,14 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    compile fileTree(include: '*.jar', dir: 'lib')
+    // https://mvnrepository.com/artifact/org.antlr/antlr4-runtime
+    implementation group: 'org.antlr', name: 'antlr4-runtime', version: '4.11.1'
+    // https://mvnrepository.com/artifact/commons-cli/commons-cli
+    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
 }
 
 jar {
@@ -28,6 +30,4 @@ jar {
     manifest {
         attributes 'Main-Class' : mainClassName
     }
-
-    from configurations.compile.collect {it.isDirectory() ? it : zipTree(it)}
 }
