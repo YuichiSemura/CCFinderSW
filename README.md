@@ -15,11 +15,16 @@ The tool detects and outputs clone pairs that are similar to each other, and exc
 
 ## How to use
 
-There are several documents.  
-About execution [Run.md](Usage/Run.md)  
-About reserved word files and comment files [OptionFile.md](Usage/OptionFile.md)  
-About Available Viewers [OutputAndViewer.md](Usage/OutputAndViewer.md)  
-Possible troubles shooting[TroubleShooting.md](Usage/TroubleShooting.md)
+There are several documents.
+
+- About execution
+  - [Run.md](Usage/Run.md)
+- About reserved word files and comment files
+  - [OptionFile.md](Usage/OptionFile.md)
+- About Available Viewers
+  - [OutputAndViewer.md](Usage/OutputAndViewer.md)
+- Possible troubles shooting
+  - [TroubleShooting.md](Usage/TroubleShooting.md)
 
 ## Required Environment
 
@@ -27,15 +32,21 @@ Possible troubles shooting[TroubleShooting.md](Usage/TroubleShooting.md)
   Currently, this program is implemented in Java only.
 - We are planning to reduce the amount of RAM as much as possible.
 
-## Former Versions
-
-[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder-e.html)
-
-[CCFinderX](http://www.ccfinder.net/ccfinderxos.html)
-
 ## Test Environment
 
-Windows 10 Pro
+some quick tests.
+
+- CCFinderSW
+  - Windows 10 Pro
+  - Max OS
+  - (probably) Linux
+- Icca
+  - Windows 10 Pro
+
+## Former Versions
+
+- [CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder-e.html)
+- [CCFinderX](http://www.ccfinder.net/ccfinderxos.html)
 
 ## Copyright and Licensing
 
@@ -51,7 +62,7 @@ Affiliation: Graduate School of Information Science and Technology, Osaka Univer
 
 The detailed information is described in our paper. The following is our paper information.
 
-```latex
+```tex
 @INPROCEEDINGS{8305997,
   author={Semura, Yuichi and Yoshida, Norihiro and Choi, Eunjong and Inoue, Katsuro},
   booktitle={2017 24th Asia-Pacific Software Engineering Conference (APSEC)},

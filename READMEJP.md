@@ -4,38 +4,51 @@ CCFinderSW (CCFSW) はトークンベースのコードクローン検出ツー�
 
 ## コードクローンとは
 
-コードクローンはソースコード中に存在する一致または類似するコード片のことを指します．  
+コードクローンはソースコード中に存在する，一致または類似するコード片のことを指します．  
 互いに類似したコード片をクローンペアと呼び，本ツールはこれを検出し，出力します．  
 また現在クローンペアは，文の挿入・削除など含むものは対象外としています．
 
 ## 最新バージョン
 
+以下のリンクからダウンロードしてください．利用方法は [Run.md](UsageJp/Run.md) を参照してください．
+
 [CCFinderSW-1.0.zip](build/distributions/CCFinderSW-1.0.zip)
 
 ## 使い方
 
-いくつかのドキュメントが存在します．  
-実行について [Run.md](UsageJp/Run.md)  
-予約語ファイル・コメントファイルについて [OptionFile.md](UsageJp/OptionFile.md)  
-利用できる Viewer について [OutputAndViewer.md](UsageJp/OutputAndViewer.md)  
-考えられるトラブルについて [TroubleShooting.md](UsageJp/TroubleShooting.md)
+いくつかのドキュメントが存在します．
+
+- 実行について
+  - [Run.md](UsageJp/Run.md)
+- 予約語ファイル・コメントファイルについて
+  - [OptionFile.md](UsageJp/OptionFile.md)
+- 利用できる Viewer について
+  - [OutputAndViewer.md](UsageJp/OutputAndViewer.md)
+- 考えられるトラブルについて
+  - [TroubleShooting.md](UsageJp/TroubleShooting.md)
 
 ## 必要なもの
 
 - Java Runtime Environment( >=8 )
-  現在，Java のみで実装しています．
-- 出来る限り多くの RAM...  
-  省メモリ化を予定しています．
+  - 現在，Java のみで実装しています．
+- 出来る限り多くの RAM...
+  - 対象となるプロジェクトの規模が大きければ大きいほど，字句情報を保持するためのメモリが必要となります．
 
 ## Former Versions
 
-[CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder.html)
-
-[CCFinderX](http://www.ccfinder.net/ccfinderxos-j.html)
+- [CCFinder](http://sel.ist.osaka-u.ac.jp/cdtools/ccfinder.html)
+- [CCFinderX](http://www.ccfinder.net/ccfinderxos-j.html)
 
 ## テスト環境
 
-Windows 10 Pro
+some quick tests
+
+- CCFinderSW
+  - Windows 10 Pro
+  - Max OS
+  - (probably) Linux
+- Icca
+  - Windows 10 Pro
 
 ## Copyright and Licensing
 
